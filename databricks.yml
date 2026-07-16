@@ -1,0 +1,19 @@
+# This is a Declarative Automation Bundle definition for DBT_CORE_DATABRICKS.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: DBT_CORE_DATABRICKS
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-c5e7b0c7-0f13.cloud.databricks.com
+
+  ## Optionally, there could be 'staging' or 'prod' targets here.
+  #
+  # prod:
+  #   workspace:
+  #     host: https://dbc-c5e7b0c7-0f13.cloud.databricks.com
